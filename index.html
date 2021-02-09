@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Bio Page</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        html,
+        body {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        h2 {
+            padding: 20px 0px 15px 0px;
+        }
+
+        p {
+            margin: 10px 0px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: 0px 0px 11px -3px #000000;
+            -moz-box-shadow: 0px 0px 11px -3px #000000;
+            box-shadow: 0px 0px 11px -3px #000000;
+        }
+
+        .grow {
+            transition: all .2s ease-in-out;
+        }
+
+        .grow:hover {
+            transform: scale(1.1);
+        }
+
+        .main-body-container {
+            background-color: slategray;
+        }
+
+        .main-header,
+        .main-footer {
+            height: 75px;
+            width: 100vw;
+            background-color: #ccc;
+        }
+
+        .logo-text {
+            display: block;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .main-container {
+            height: calc(100vh - 150px);
+            width: 90vw;
+            margin: 0px auto;
+        }
+
+        .top-section {
+            width: 100%;
+            background-color: #ccc;
+            height: 210px;
+            margin: 10px 0px;
+            overflow: hidden;
+        }
+
+        .top-inner-section {
+            overflow: auto;
+        }
+
+        .bottom-section {
+            width: 100%;
+            height: 60%;
+            background-color: rgb(163, 163, 163);
+        }
+
+        .sidebar {
+            width: 25%;
+            background-color: #ccc;
+            height: 100%;
+            float: left;
+        }
+
+        .gallery {
+            height: 100%;
+            margin-left: 25%;
+            padding: 0px 1em;
+            overflow: auto;
+        }
+
+        .pic-container {
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+        }
+
+        .pic-container>img {
+            object-fit: cover;
+            display: block;
+            width: 190px;
+            margin: 10px;
+        }
+
+        .sidebar>ul {
+            list-style-type: none;
+        }
+
+        .sidebar>ul>li>a {
+            padding: 15px 20px;
+            display: block;
+            background-color: #ccc;
+            border: 1px solid slategray;
+            transition-duration: 0.5s;
+        }
+
+        .sidebar>ul>li a:hover {
+            background-color: rgb(210, 241, 255);
+        }
+
+        .gallery-container {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .gallery-container>li {
+            display: inline-block;
+            margin: 10px;
+        }
+
+        .gallery-container>li>img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .footer-text {
+            text-align: center;
+            display: block;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="main-body-container">
+    <header class="main-header box-shadow">
+        <span class="logo-text">
+            Saul Murillo
+        </span>
+    </header>
+
+    <section class="main-container">
+        <div class="top-section box-shadow">
+            <div class="top-inner-section">
+                <div class="pic-container">
+                    <img src="./img/saul.jpg" class="bio-image" alt="my pic">
+                </div>
+                <div class="bio-description">
+                    <h2>A little bit about myself...</h2>
+                    <p>This is my last semester. I am a CIS major. I run my own clothing line (logo shown in gallery
+                        below).
+                        My main goal in life is to be my own boss and not have to report to higher ups. Whether my brand
+                        becomes a success or not, I will find a way to make this business opportunity or any other happen. </p>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section box-shadow">
+            <aside class="sidebar">
+                <ul class="list">
+                    <li>
+                        <a href="https://www.google.com" target="blank">Google</a>
+                    </li>
+                    <li>
+                        <a href="https://fresnostate.edu/academics/canvas/" target="blank">Canvas</a>
+                    </li>
+                    <li>
+                        <a href="https://www.csufresno.edu" target="blank">Fresno State</a>
+                    </li>
+                    <li>
+                        <a href="https://www.glorysymbol.com" target="blank">Glory Symbol</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="gallery">
+                <h2>Gallery</h2>
+                <ul class="gallery-container">
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/glorysymbol.png" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog 1.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog 2.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog 3.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/dog 4.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/cat 1.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/cat 2.jpg" alt="item1">
+                    </li>
+                    <li class="gallery-item box-shadow grow">
+                        <img src="./img/gta.jpg" alt="item1">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer box-shadow">
+        <span class="footer-text">Copyright (C) 2021. Created by Saul Murillo</span>
+    </footer>
+</body>
+
+</html>
